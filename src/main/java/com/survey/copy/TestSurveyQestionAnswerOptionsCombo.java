@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class TestSurveyQestionAnswerOptionsCombo {
 
 	public static void main(String[] args) {
-		List formSurveyList = queryGetResultList();
+		List<Object[]> formSurveyList = queryGetResultList();
 		FormSurveyDto formSurveyDto = CopyToFormSurveyEntityUtil.populateFormSurveyDetails(formSurveyList);// PASCP//PriorAuthSosClinicalPolicy
 		System.out.println(formSurveyDto);
 
