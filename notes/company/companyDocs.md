@@ -3,7 +3,8 @@
 - [Project Notes 1](Project/ProjectNotes1.md)
 - [KT Day 1(i)](KT/Ajile.md)
 - [KT Day 1(ii)](KT/DevOps.md)
-
+- [KT Day 2(ii)](KT/Kt2_1_Cashflow.md)
+- [KT Day 2(ii)](KT/Kt2_2_DebitCartNumGeneration.md)
 
 
 
