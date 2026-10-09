@@ -1,281 +1,233 @@
-Hi everyone, so today I will be covering the topic on why Vanguard, why are we going with  the debit card engagement and what's the role in that and how this debit card flow  chain, flow takes place and all the related processes and everything will be discussing  today.
 
-Yeah, so actually today I thought if we were in person we will be explaining pictorial,  so it is easy for us too and maybe once you come to office again we can have a brief discussion  if you have any questions there.  just I am repeating because I think you didn't hear it previously.
 
-Let me start with.
+Are you able to see my screen?
 
-So first as you know as Abhishek mentioned in the intro call that regarding the Vanguard  and the current ecosystem in Vanguard process.
+Yes, yes you.
 
-So to again rephrase that Vanguard is nothing but an American investment company where it's  the largest provider of the mutual funds or ETFs or brokerage accounts and many like financial  planning and all of those.
+Yeah, so, Bamshi, do you have any questions till now what we have discussed?
 
-So currently in Vanguard we have cashless account.
+Um, as of now, yeah.
 
-You can just note it down so that you can go and read about that.
+Yeah, so I will just summarize what she'll be the said.
 
-So we have the cashless account where the customers keep their money like invest their  money in that cashless account in Vanguard.
+So we expand what 80183, so that is a general working flow of how things happen in the Vanguard.
 
-So like whole money they will put it in that so that they will get some like.
+So, when we come to our team, so our team will come under spend experience.
 
-If they keep that money, as you know, we'll get to grow our amount depending on the competitive  offering like per annual yield like 3.35 or something that may increase depending on the  market situations.
+So, we will say we will have a cash plus account and we will.
 
-But as you know that they will invest and they'll be getting some amount of offering.
+We will give a customer a card or debit card to spend their money in the cash place account.
 
-And so what happens is that, so let's say now you have the cash plus account in Vanguard  and when you want to use those money, let's say you have your money in your bank account  and you have to transfer to the cash plus account.
+So they'll have their money in the cash place account because it gives a relatively higher interest than the outside.
 
-So what do you do is you transfer the money from your bank account and to the cash plus  account.
+But they also want to spend that money.
 
-So let's say after some days you want to use those amount from the cash plus account.
+So to facilitate this option, so we want to give them a debit card option so that they can withdraw funds from their account and spend wherever they want.
 
-So again what you have to do is you have to transfer the amount from cash plus account  back to your bank account.
+So our team comes into the picture where we want to enroll a user into the BitCard process and also I will explain how the transaction things are happening.
 
-So this is the flow.
+So I'll just give you an overview of how this process works.
 
-So we have cash transfer application in Vangad currently where users  can add money from their bank account to cash plus account.
+So first, here we have three main entities.
 
-So vice versa, like from bank  account to cash plus account.
+So first one is a Vanguard and second one is a Card Processor and third one is a Bank.
 
-Do you have clear correct now?
+So when we want to give a debit card to the customer, we cannot directly give because we are not a bank and to give a debit card to issue a card to the customer, there needs to be some compliance need to be fulfilled.
 
-Yes, as of now clear.
+And if the Vanguard goes through all the compliances, it will be very hectic.
 
-Yeah, only the cash plus account and what the current transfers are going from?
+So what Vanguard will do is it will give that job to some other entity where they already completed all the compliances and everything.
 
-Yeah.
+So that is an entity which is a card processor.
 
-It's like in India we have the grow, we have account we are keeping the money right  in the wallet kind of thing right?
+So the card processor have all the complaints related to issuing the card and all the security measurements they'll have.
 
-Can I consider or that we have a separate account  ID we have created we need to separately create  in the vanguard or separate cash place account we need to create or is it whenever we register  as a vanguard broker account in our system it automatically creates cash place account.
+So we will just take the help of the card processor to issue the debit card.
 
-No you have to create like you have to invest your money there right so you will be having  a cash place account for particular user ID there is a particular customer.
+So that we will not be in a state that we should be in compliance to all the bank related stuff.
 
-So like that yeah I think I am.
+So this is why we are going for the card processor.
 
-So there is a difference for both so we were  meeting separate like vanguard broker account separate and cash place account separate separate  accounts can I consider there are two separate accounts.
+So along with the card processor we will also have a sponsor bank.
 
-Brokerage is separate, brokerage is typically where you will buy all stocks, mutual funds, ETFs and everything.
+So I will explain why a sponsor bank comes into picture.
 
-Cash account, technically it's kind of a brokerage account only, but you do not want to or you cannot purchase anything based out of cash account directly.
+So first we'll go through step by step.
 
-It's just like money sits there like a savings account and then you can earn interest on it.
+Suppose Vanguard have a cashblow account.
 
-Suppose if any user wants to send money to Vanguard, we need to send separately for Vanguard brokerage account as well as we need to send Vanguard cash plus account.
+So there will be an existing customer.
 
-So that we can utilize for two purposes, Vanguard brokerage account for investing the amounts in ETFs, mutual funds and stocks whereas cash plus is for interest purpose.
+So there will be some new customers which will be on board to the Vanguard.
 
-Is my understanding correct?
+So when customer on board to the go through the Vanguard website and if he wants to enroll for the debit card. debit card program.
 
-Yes, so if you have a bank account and if you move money from that bank account to brokerage,  fine, that can happen.
+So I will click on like get the debit card.
 
-If you move money from your bank account to your cash account, yes, that can happen separately.
+So what happens is when we when he click on that, so then we will, so before that I will explain a few things before explaining this flow.
 
-You are looking to earn safe 3.25 interest for 3 months, great.
+So this debit card processor is the main functions of this processor will be it will it will send a so whenever there is an account transactions, it will send a webbooks to the our Vanguard system and also it will maintain the shipment and logistics so that the physical debit card will be reached to the appropriate customer.
 
-Now you are ready to take risk, move from cash to brokerage also is fine.
+So it can do it itself or it can depend on some third party for the shipping and logistics operations.
 
-Okay, makes sense.
+So those operations will be covered by the card cluster.
 
-Yes.
+So this sponsor bank will come to sponsor bank.
 
-So, yeah, as I said, like money will be transferred from here and there.
+So each bank will be associated with the payment networks.
 
-So now currently what,  how they will be transferring is using ACH and wire transfers.
+I think you have heard like we have a few payment networks like Visa, Mastercard, and India it is a rupee.
 
-ACH is nothing but is  the payment network between the transaction between two banks, your cash plus account  and the bank and the bank account you have.
+So these are the payment networks where they when we do any transaction through the card.
 
-So you can go and read it out on ACH and wire  transfer.
+So the transaction flow go through these payment networks.
 
-So here, yeah, here what we are trying to add is for this, so transferring  from money from here and there.
+So this sponsor bank is already partnered with the Visa, Mastercard, and Discord different payment networks.
 
-So for this, we are adding a new layer to withdraw money  directly from the cash plus account.
+So that... So it will issue some bin identification number, bin number.
 
-So now it's, if we, so we are going to add a  Bye.  at this debit card functionality so that we can directly withdraw money from like customers  can directly withdraw money from cash bliss account so that users can use their card to  make transactions wherever they need it.
+So bin means business identification number.
 
-So you understood the use case why the debit card function is.
+It will issue that number.
 
-It's similar to now ATM card savings account it will be here.
+So what happens is when the user enrolls for the debit card, so it will go to the request, go to the card processor.
 
-Yeah we can do all bill payments everything debit card with credit card.  differential between normal savings card other than the interest rates.  on the card?
+So card processor will capture all the details of the user, like is all, chikrofil locations, ah name, everything.
 
-Yeah normal savings bank account card and this cash plus account  yeah cash plus account is nothing but you are investing money in that cash  account right or van get cash plus so as is told in the starting like I'll ping you a link where  van get how much offering competitive offering per annual percentage that will be giving like I  think currently it is 3.35 percent or something yeah so based on that you will get the interest amount  right so that main cash I'll ping you a link on that van get cash plus account  sure  Yeah, so apart from this so coming to van Gad ecosystem so in van Gad all the repositories  or all the applications that we have will be abbreviated with three alpha numeric characters.
+Whatever it is required for the card processor to deliver that card.
 
-Let's say we are we have created few applications for our debit card functionality.
+So again, it will send a request to its third party shipment and printing the physical card.
 
-So those those will be activated with three letter R or three alpha numeric characters  like for example we have the main applications in van Gad is ET1 and ET3.
+So it will send request to that form or it can do by itself if it has a facility.
 
-If you see ET1 three letter three alpha numeric characters so ET1 and ET3 is nothing but  applications related to the cash transfer.
+So now the shipment and the printing, card facility will ask for I will issue a debit card but what number should I print on it.
 
-Okay, so to elaborate on this, show you are a diagram.
+So I think you have seen that every debit card will have a unique number it's called pan number so it will be a 16 digit number.
 
-Yeah, so to elaborate on this, so EET1 is the, assume that EET1 is the cash transfer core  application and EET3 is the cash transfer application.
+So it will ask which what kind of number what number should I print.
 
-Okay, EET3 is nothing but business process and EET1 is a core.
+So there comes the idea of pan number so it is basically combination of bin plus some value.
 
-That means any, this core web service will directly talk to the database.
+So bin is nothing but it is a business identification number where it will be like four or six digits.
 
-Thank you.  any traffic that will be operated to ET1 that will come from ET3.
+Bank identification number, sorry.
 
-Let's say we will be like any database operation will not be directly calling to ET1.
+So it will be like four and six digits for each payment network.
 
-Are you going to share it with me?
+So, and some value, it will be generated by using some algorithms, based on some algorithms.
 
-Okay, okay.
+So now to print the card, it requires two numbers.
 
-I think it's not sharing yet.
+So now what code processor will do is it will ask the sponsor bank to give that bank identification number.
 
-Share it again.
+So according to what we sell it to, which payment network we prefer.
 
-I hope my screen is visible now Amsh.
+So each payment network will have its own... bin identification number.
 
-Yes, it's visible.
+So let's suppose we saw a payment network starts with four digits and discover a payment network starts with six digits and marks a card some two digits.
 
-Yeah, this is just a small diagram.
+So based on what network we choose so the associated bin number will be given to the card processor and the card processor will give their number to the card printing form.
 
-Just ignore the left one.
+So it will print the number bin identification number and the associated value for the card that card. and it will be issued to the customer who is requesting for the debit card.
 
-So let's say this E3 is the business web service  and E1 is our core web,  E1 is the core transfer web service,  core transfer, this directly talks to database.
+So this is the flow of how a customer enrolls into the debit card and he will get back his physical debit card through this process.
 
-Let's say if we want to consume or get some,  get some records from E1,  will not be directly consuming E1.
+So now once the, I will stop here and if you have any questions in this process, come and ask. and other it is what?
 
-It should talk from E3.
+yeah other it is will be a some value which will be generated using some algorithms unique criteria for the number unique yeah based on the customer and details so the card processor will generate that number using some algorithms will be there okay so that's a unique identification card number because yes that is a pan number what will show this card processor is a microservices it is expected No, so this is the Vanguard, so all the applications we build is inside the Vanguard.
+
+This CardProcess is an external third party service.
+
+And the sponsor bank also, third party service, we will collaborate with them and for this process.
+
+Okay, so in our Vanguard we have the microservice that consumes CardProcess and Bank application.
+
+These are two microservices I can consider, right?
+
+These two are we are consuming and we are preparing the debit card and shipping related by preparing this all 16 digit by using these differentiation, a unique debit card number.
+
+Can I consider like that?
+
+Actually, so the red color box whatever you are seeing, this is only the Vanguard related applications will be present inside it.
+
+So we will have some micro service and application which will talk to the card processor or sponsor bank.
+
+This card processors are third party applications, so not the Vanguard related applications.
+
+We are giving inputs to that card processor.
 
 Okay.
 
-It should route the traffic should be routed only from 83.
+Yes, we will talk to the some other some other So this card processor and sponsor branch.
 
-So along with this,  so now we will be having card management functionalities, right?
+Yeah, go ahead.
 
-So for that we have  again, we will be covering this ZM3 and ZM2 things in other session, but just to just  to check or make the connectivity between 83 and 81, like in the same way we have created  our ZM3 and ZM2 application.
+No, no.
 
-Our ZM3 is nothing but our business web service.
+So this card processor and… No, my question is we are giving inputs to the card processor and sponsor branch, then finally we are generating the card number in this application.
 
-So any client  or any request that is coming directly will hit directly will hit our ZM3 application.
+Yes, yes.
 
-Here we don't have that.
+We are generating, yeah, we are generating and we are shipping the card to the user.
 
-I'm just explaining orally.
+User.
 
-I am just relate this ET3 to our GM3.
+We in the sense we will take the help of the card processor which is a third partition.
 
-Okay, it's a wrapper kind of thing.
+So we will not handle any kind of this pin generation or value generation or printing the cards and shipment.
 
-I can consider ET3 wrapper is a GM3.
+We do not deal with any of this stuff.
 
-It's an application business where all the business logic,  it's a separate application where all the business logic  stays for the cash transfer functionalities.
+So this will be taken care of by this card processor which is a third party outside the Vangadot.
 
-In the same way, we have our business logic,  everything written in the ZM3 application.
+Okay, but is there any... We can call them as vendors, sure.
 
-What is there in the ETH3 application?
+Vendors.
 
-It's ETH3 business process web service.
+So these card processor and the sponsor banks are talking to each other or we need to, in our Vangadot application, we need to pop... let's say we are using VISA.
 
-What operations in this service?
+We saw related 4 digit number 4001.
 
-Yeah, that is that that things we are not dealing with but actually ETH3 will be taking  care of all the cash transfer related business logic.
+These information we are taking from our Vanguard application.
 
-Here we are not directly involved in the ETH3 or we are not directly working for the ETH3  functionalities.
+We are providing this input to Card Processor.
 
-I am just trying to relate the current functionality how in vanguards take place so that you can  relate ETH3 to the ZM3 application.
+Or directly these are, we just specify those information.
 
-It's nothing but the front end facing application like back end application where everything  talks to that ZM3 in our case.
+It will take that Card Processor itself and it will prepare the 16 digit number.
 
-Don't think like E3 we are going to work in the E3 application.
+Yeah, so some Card Processor, they will have their own sponsor bank associated.
 
-Just as you said.
+Some vendors, like Card Processor, will have their own sponsor bank associated.
 
-Yeah, so the theme there is what she's mentioning also every web service, right?
+So all the process will be taken care by them. but comes to VG or come to Vanguard.
 
-Whether it's business process web service, core web service, any kind of thing.  will come with 3 letter alpha numeric.
+So we will have separate vendor for the card processor and we will also associated with the separate sponsor bank.
 
-It will not have any importance like you will not say like E is for something T is for something  3 is for something just you will have to put some initials kind of thing right?
+So it is a choice, like we want to go with the, whether we want to have both sponsor bank and the vendor at the same place or we want to bring our own sponsor bank, it is an option.
 
-E T3, E T1, AWG, ZVI, BM9 like this people will basically call it.
+So for now, we are going with the separate sponsor bank and separate vendor.
 
-She is just giving you an example that there is an ecosystem out there that is E T3 and  to the E.T. one.
+So we will have the communication between all these three things, like a sponsor bank, Vanguard and the card processor.
 
-E3 they call it their business process.
+Okay, yeah.
 
-If E3 is their business process, our business process is going to be ZM3.
+As Shiva mentioned, whether they have worked before or they are working for first time, Vanguard has to talk to bank, Vanguard has to talk to processor and we have to make processor talk to bank as well.
 
-Right?
+So they will have their own communication going on, parallelly also, so that they know each other and they work, you know, for compliance and other regulatory processes.
 
-Like that.
+Do you see the dotted line joining the two?
 
-But yeah, go ahead Shilpa.
+A debit card processor to a sponsor bank, right?
 
-Yeah, thank you.
+Correct, yeah.
 
-Babshi you are clear right?
+So internally they have to get contracted and connected to each other, which is a black box for us, but just good to know.
 
-Yes.
+Yeah, okay.
 
-Do you want an explanation on E3?
+I will continue.
 
-Yeah.
+So, you have understood the first flow where user endows for the debit card and all this process will take takes place in the backend.
 
-Yeah.
-
-Like Abhishek also added so every web service like every operations or every web service  will start calling to E3 like wherever it required and that internally calls this core  web service that is in our case it is ZM2.
-
-So I am not just going deep dive into that because we will explain whole things what  we are doing in our application in ZM3 and all the infrastructure in other sessions just  I am just relating to this to our applications.
-
-Okay?
-
-So regarding this cash transfer, let's say I'll just give an example of what is happening  currently.
-
-So let's say this cash transfer application as I told it is used to move the money to  EnFro right from our account to the cash plus and to EnFro.
-
-So let's say you have a account, a money in your account, it might be any bank account  and now you want to transfer that to your cash place account.
-
-The same thing I'm just giving it in the pictorial view.
-
-Like let's say you wanted to fund your cash plus account  from your account.
-
-So WGUI is the UI application where it starts,  cash transfer UI.
-
-So let's say you are sending in money from here.
-
-It goes to the E3, as I said, business web service.
-
-And internally it calls the database operations  core web service.
-
-And when that EG1 is called internally,  Yeah, as user enters the amount here,  like user select the transaction type,  I don't have the UI to show,  but the user, there will be a transaction type of ACH  or wire as is told.
-
-So when you submit that, it internally goes to these  backend downstream calls.
-
-And internally when that ET1 is called,  all the transaction related to and from,  all the transaction related things will be stored  in the ledger records.
-
-So just keep a note on that, what ledger records are.
-
-To be ledger records is nothing but all the records  of all the transactions that you do from the starting,  from initiating the transaction to ending the transaction,  whether it is,  Whether it is the transaction or any reversal transaction or anything related with the transaction details  Like whole things will be stored in the ledger records  So just keep in note again  We can go through that ledger records if you have any doubts, but normal flow is that we will  Be using this cash transfer application  To move money from here and there so our thing is that as I said we will be integrating debit card in  Bye.  here debit card so that don't assume this diagram as final just to make you a pictorial  view that we are our debit card which comes in place in between here so that we can withdraw  the amount from our cash plus account.
-
-And next we will be like we will be covering so  how the debit card flow.
-
-I will share you on these pages and also the recording regarding this.
-
-So now we will be explaining how the debit card comes into picture or how the debit card  is created and what are all the processors or things that involved in debit card functionality.
-
-So as I said Vanguard is not a bank because that is the reason we are not creating any  debit card directly and also Vanguard does not want to enter into PCI DSS compliance and  also keep note of this PCI DSS compliance that means Vanguard don't want to enter into  all this authentication or firewalls where all the details regarding the customer or  all the sensitive information.
-
-So, Vangad wants to avoid all this direct compliance, BCI, DSS things.
-
-That's the reason and Vangad will not issue the cards directly.
-
-So that Vangad have to partner with some of the card processors.
-
-So currently we have many card processors existing now.
-
-So Vangad have to partner with any one of the card processors.
-
-So that the card processors will take care of managing the card, managing the card, creating  the card.  whole card life cycle.
-
-So we have to, Vanguard have to partner with some of the card processor.
-
-So now currently we have Marketa, Pfizer and some of these things.
-
-So Vanguard have to partner with  one of the card processor.
-
-So from here, Shiva will be starting.
-
-So how Vanguard will, like how  Vanguard will be connecting with card processor and what is the flow when the card is created  and what is the flow once the card is created, what is the flow when a transaction is initiated  through that card.
-
-Okay, Shiva you can start. 
+And finally user's kit is debit card ship 2 is
