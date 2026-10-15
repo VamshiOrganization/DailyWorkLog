@@ -1,0 +1,181 @@
+token sorry I need a card product token I need a user token then I have to have an  ID of potency in card token which will be token but then what are the other  fields that I need there are very minor details in each of APS which we have  not covered during our analysis phase right we have done very  high level technical discovery kind of thing.
+
+One example I just want to leave you with  is what is going to come our way.
+
+What could potentially come our way is think of this  of God, of create a God and then you have this request body here.
+
+So bunch of things in here but what is not in that sample payload and what is just assumed to be  correct or not paid attention to all these parameters in here which  Vanguard might feel are very very important.
+
+And one of the discussions that are going on  big time is this expiration offset.  because she brought up the fraud topic I just want to link it to this one here.
+
+Nothing confirmed but discussions are going on we will hear about them soon.
+
+Everyone has their own debit cards, credit cards that you work or use.
+
+You have done I assume at least once you have done online shopping which I believe is the trend and the norm now rather not even trend.
+
+Your cards are already on file.
+
+You don't even type your cards anymore.
+
+Everything is linked.
+
+Your cards have expiration dates.
+
+Anytime you go to any e-commerce site where you try to add your card, you have to give  the card expiration date.
+
+And things card.
+
+You'll have to make sure that you consume them or utilize them before they expire.
+
+Now, that is a very sensitive information in context of card from a fraud perspective.
+
+That is where they are saying, first there are debates going on at a very high level.
+
+Should we even store this expiry date in our databases?
+
+Because it is going to become DCI compliant.
+
+If we don't store this, how will we renew cards?
+
+How will we send notifications and all those things are going?
+
+Second, if all of Vanguard's customers, everyone's expiration card date is let's say 0832, 5 years from now.
+
+08.32 August 23rd 2.00.
+
+By running AI or more sophisticated hacking mechanisms, they can crack all Vanguard cards.
+
+And there are cases that have happened in the past.
+
+That if you are able to crack the expiration date algorithm, you can basically unlock the whole product and guess lots of things that this organization is doing.
+
+So that is where there is a discussion going on.  on what should be done for this expiration of offset.
+
+If you expire a card and my theory is that I am proposing that to Shweta also.
+
+That talk about this or they might be thinking,  if you expire a card let's say in six months you'll have to prepare so many cards often.
+
+So, we'll pay a cost for it.
+
+If you keep a card for long eight years, ten years,  high chance that it will get caught to it fraud.
+
+So, there has to be.  suitable window for four years five years six years window in that also you should not keep  the month static so this is coming from another set of people that Shweta is working with where  she is getting input on that they don't want this to be a static value and then Shweta is  figuring out this parameter for us can we use this parameter to make it dynamic  can we devise any algorithm around these four or two parameters of this to make it dynamic.
+
+So now we are creating one card for reason 832, next for Lahari 831, next for Shiva 932,  next for Shilpita 1032, next for Vamshi 931 like that.
+
+Is there some tolerance plus minus here that can be done.  so that we scatter the expiration data across the range.
+
+Why I brought this as an example?
+
+Point number one, link it to fraud.
+
+Point number two, continue the exercises that we have done now at a more deeper level.
+
+I will never go back and now talk about what is a card product, what is a card, no.  you are now at a level where you know everything  but we have to go to the next level always  so start from scratch, treat it as a new  with a new perspective and then see oh last time I checked I never read about this  I missed this, we never went into this line think about transition  what can you do with transition now here my assumption as I was discussing about  car transition was  activate a card, right?
+
+SDK Studio, I went to studio, I told, can you activate a card?
+
+Yes, you go to this, you go to this, we will give you an SDK token, let them put whatever  details you want, use this PCI compliant component, put your details, get your card activated,  job done.
+
+I can ship this functionality in 5 minutes.
+
+I mean, I'm exaggerating, but  quickly.
+
+The other way is you build a card transition API, you put it in CM2, CM3, you  put it in CM1, you talk to the UI, they have them create some design and then they will  make an API call which will have the card token coming from our CM2.
+
+So we will have  to do the poid2 card token conversion.
+
+Previously we did poid2, sorry, we did poid2 user token  conversion, here we will have to do  point and account number 2 card token.
+
+Point, account number, card product, 2 card token conversion.
+
+So all these things we will have to do.
+
+So then we will get this card token.
+
+Now that we got the card token, you can more or less build this payload and send it to  make it active.
+
+Now people are saying, oh, this is sensitive.
+
+What will happen if we do this?
+
+So lots of discussions going on.
+
+Then the other part is think about  One position, yeah.
+
+Actions.
+
+What if I lost my card?
+
+Or I have to lock my card, right?
+
+Lock my card.
+
+Lock and lock.
+
+If I lock my card, will I get a new card?
+
+No?
+
+I can unlock it and start using it.
+
+You do that by API.
+
+Nobody told us that you can do it through API.
+
+You look at card transition.
+
+There are only three states here.
+
+Active, suspended, terminated.
+
+My mind goes to terminated.
+
+Is it terminated when I lock it?
+
+No.
+
+If I terminate it, it's like lost stolen kind of thing.
+
+For which I should get a new card.  suspended I'm not sure what suspended is naturally the question is then where is lock unlock in this  state no there is a hidden in here that this lock uses that that enum's name is the limited  so if you use a card transition and make it limited then it goes into lock state from limited you  you can make it active, active you can make it limited.
+
+So you have to now go to that level of parametric details.
+
+Do we know everything?
+
+No.
+
+Now sync state with DWTs.
+
+What is DWTs?
+
+Digital wallet tokens.
+
+What is a digital wallet token?
+
+You have a virtual card.
+
+You have a physical card.
+
+Now virtual card is going to get push provision  into a digital wallet.
+
+That wallet comes to a token.  if I terminate  the virtual card.
+
+If I see that, finish this.
+
+I don't want this physical card or it is lost  or stolen.
+
+Move to terminated status.
+
+The wallet is still active.
+
+You can still use  your phone or digital watch if you have that kind of NFC in it.
+
+You can still use those  devices to continue your transaction.
+
+But if my card is lost as a user, my wallet  Thank you.  digital wallet should also sync up and that should also stop working.
+
+So now we'll have to go to that level  because some of it might stay static but we have to build that relation with ZM1 in such a way that  we transfer over some information to them whatever is needed.
+
+They will also have to learn all of  this as they get smart on it but my point for you is job well done more to do. 
